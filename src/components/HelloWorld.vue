@@ -5,16 +5,15 @@ defineProps({
   a: Number,
   msg: String
 })
-const a = 2;
-const b = 3;
-const c = 4;
-console.log('222', a, b)
+const a = 2
+const b = 3
+// const c = 4;
+console.log('2222', a, b)
 const count = ref(0)
 if (a === 2) {
   console.log('11111')
 }
 </script>
-
 <template>
   <h1>{{ msg }}</h1>
 
@@ -22,15 +21,18 @@ if (a === 2) {
     <button type="button" @click="count++">count is {{ count }}</button>
     <p>
       Edit
-      <code>components/HelloWorld.vuecomponents/HelloWorld.vuecomponents/HelloWorld.vuecomponents/HelloWorld.vuecomponents/HelloWorld.vuecomponents/HelloWorld.vuecomponents/HelloWorld.vue</code>
+      <code
+        >components/HelloWorld.vuecomponents/HelloWorld.vuecomponents/HelloWorld.vuecomponents/HelloWorld.vuecomponents/HelloWorld.vuecomponents/HelloWorld.vuecomponents/HelloWorld.vue</code
+      >
       to test HMR
     </p>
   </div>
 
   <p>
     Check out
-    <a href="https://vuejs.org/guide/quick-start.html#local" target="_blank">create-vue</a>, the official Vue + Vite
-    starter
+    <a href="https://vuejs.org/guide/quick-start.html#local" target="_blank"
+      >create-vue</a
+    >, the official Vue + Vite starter
   </p>
   <p>
     Install

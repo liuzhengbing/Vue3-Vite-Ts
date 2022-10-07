@@ -5,29 +5,23 @@ module.exports = {
     node: true
   },
   extends: [
+    'eslint:recommended',
     'plugin:vue/vue3-essential',
-    'standard-with-typescript'
+    'plugin:@typescript-eslint/recommended',
+    // 方案1：prettier + eslint-config-prettier + eslint-plugin-prettier(推荐使用)
+    'plugin:prettier/recommended'
+    // "prettier" // 方案2：prettier + eslint-config-prettier
   ],
-  overrides: [
-  ],
+  overrides: [],
+  // parser: "@typescript-eslint/parser",
+  /* 指定如何解析语法。*/
+  parser: 'vue-eslint-parser',
+  /* 优先级低于parse的语法解析配置 */
   parserOptions: {
     ecmaVersion: 'latest',
-    sourceType: 'module'
+    sourceType: 'module',
+    parser: '@typescript-eslint/parser'
   },
-  plugins: [
-    'vue'
-  ],
-  rules: {
-    semi: [2, 'never'], // 禁止尾部使用分号“ ; ”
-    'no-var': 'error', // 禁止使用 var
-    indent: ['error', 2], // 缩进2格
-    'no-mixed-spaces-and-tabs': 'error', // 不能空格与tab混用
-    quotes: [2, 'single'], // 使用单引号
-    'vue/html-closing-bracket-newline': 'off', // 不强制换行
-    'vue/singleline-html-element-content-newline': 'off', // 不强制换行
-    'vue/max-attributes-per-line': ['error', {
-      singleline: { max: 5 },
-      multiline: { max: 5 }
-    }] // vue template模板元素第一行最多5个属性
-  }
+  plugins: ['vue', '@typescript-eslint', 'prettier'],
+  rules: {}
 }
