@@ -22,6 +22,6 @@ module.exports = {
     sourceType: 'module',
     parser: '@typescript-eslint/parser'
   },
-  plugins: ['vue', '@typescript-eslint', 'prettier'],
+  plugins: ['vue', '@typescript-eslint'],
   rules: {}
 }
