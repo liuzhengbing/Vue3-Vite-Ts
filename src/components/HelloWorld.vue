@@ -1,11 +1,13 @@
-<script setup>
-import { ref } from 'vue'
+<script setup lang="ts">
+import { ref } from "vue";
 
 defineProps({
-  msg: String
-})
-
-const count = ref(0)
+  a: Number,
+  msg: String,
+});
+var a = 2;
+console.log('222', a);
+const count = ref(0);
 </script>
 
 <template>
@@ -15,15 +17,16 @@ const count = ref(0)
     <button type="button" @click="count++">count is {{ count }}</button>
     <p>
       Edit
-      <code>components/HelloWorld.vue</code> to test HMR
+      <code>components/HelloWorld.vuecomponents/HelloWorld.vue
+        components/HelloWorld.vuecomponents/HelloWorld.vuecomponents/HelloWorld.vuecomponents/HelloWorld.vuecomponents/HelloWorld.vue</code>
+      to test HMR
     </p>
   </div>
 
   <p>
     Check out
-    <a href="https://vuejs.org/guide/quick-start.html#local" target="_blank"
-      >create-vue</a
-    >, the official Vue + Vite starter
+    <a href="https://vuejs.org/guide/quick-start.html#local" target="_blank">create-vue</a>, the official Vue + Vite
+    starter
   </p>
   <p>
     Install
