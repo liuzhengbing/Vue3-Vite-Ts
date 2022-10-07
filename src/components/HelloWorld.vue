@@ -7,7 +7,7 @@ defineProps({
 })
 const a = 2
 const b = 3
-// const c = 4;
+const c = 4;
 console.log('2222', a, b)
 const count = ref(0)
 if (a === 2) {
