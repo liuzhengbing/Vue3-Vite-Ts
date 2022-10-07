@@ -8,9 +8,8 @@ module.exports = {
     'eslint:recommended',
     'plugin:vue/vue3-essential',
     'plugin:@typescript-eslint/recommended',
-    // 方案1：prettier + eslint-config-prettier + eslint-plugin-prettier(推荐使用)
+    // prettier + eslint-config-prettier + eslint-plugin-prettier(推荐使用)
     'plugin:prettier/recommended'
-    // "prettier" // 方案2：prettier + eslint-config-prettier
   ],
   overrides: [],
   // parser: "@typescript-eslint/parser",
