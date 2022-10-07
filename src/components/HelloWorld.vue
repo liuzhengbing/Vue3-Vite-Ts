@@ -1,13 +1,18 @@
-<script setup lang="ts">
-import { ref } from "vue";
+<script setup>
+import { ref } from 'vue'
 
 defineProps({
   a: Number,
-  msg: String,
-});
-var a = 2;
-console.log('222', a);
-const count = ref(0);
+  msg: String
+})
+const a = 2;
+const b = 3;
+const c = 4;
+console.log('222', a, b)
+const count = ref(0)
+if (a === 2) {
+  console.log('11111')
+}
 </script>
 
 <template>
@@ -17,8 +22,7 @@ const count = ref(0);
     <button type="button" @click="count++">count is {{ count }}</button>
     <p>
       Edit
-      <code>components/HelloWorld.vuecomponents/HelloWorld.vue
-        components/HelloWorld.vuecomponents/HelloWorld.vuecomponents/HelloWorld.vuecomponents/HelloWorld.vuecomponents/HelloWorld.vue</code>
+      <code>components/HelloWorld.vuecomponents/HelloWorld.vuecomponents/HelloWorld.vuecomponents/HelloWorld.vuecomponents/HelloWorld.vuecomponents/HelloWorld.vuecomponents/HelloWorld.vue</code>
       to test HMR
     </p>
   </div>
