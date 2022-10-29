@@ -1,18 +1,19 @@
-<script setup>
-import { ref } from 'vue'
+<script setup lang="ts">
+import { ref } from 'vue';
 
 defineProps({
   a: Number,
   msg: String
-})
-const a = 2
-const b = 3
-const c = 4
-const d = 5
-console.log('2222', a, b)
-const count = ref(0)
+});
+const a = 2;
+let b: number | string = 3;
+const c = 4;
+const d = 5;
+b = '222';
+console.log('2222', a, b);
+const count = ref(0);
 if (a === 2) {
-  console.log('11111')
+  console.log('11111');
 }
 </script>
 <template>

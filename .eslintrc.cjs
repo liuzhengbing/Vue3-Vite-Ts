@@ -12,8 +12,8 @@ module.exports = {
     'plugin:prettier/recommended'
   ],
   overrides: [],
-  // parser: "@typescript-eslint/parser",
   /* 指定如何解析语法。*/
+  // parser: "@typescript-eslint/parser",
   parser: 'vue-eslint-parser',
   /* 优先级低于parse的语法解析配置 */
   parserOptions: {

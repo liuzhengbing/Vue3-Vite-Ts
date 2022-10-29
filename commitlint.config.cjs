@@ -14,7 +14,11 @@ module.exports = {
   // chore：不属于以上类型的其他类型
   // subject-max-length 则对应实际的 commit 长度（不包括前缀），这里我们设置为30
   rules: {
-    'type-enum': [2, 'always', ['feat', 'fix', 'revert']],
+    'type-enum': [
+      2,
+      'always',
+      ['feat', 'fix', 'style', 'chore', 'build', 'perf']
+    ],
     'subject-max-length': [1, 'always', 30]
   }
-}
+};
