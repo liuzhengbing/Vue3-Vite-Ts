@@ -27,6 +27,6 @@
     "useUnknownInCatchVariables": false
   },
   "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
-  // "references": [{ "path": "./tsconfig.node.json" }],
+  "references": [{ "path": "./tsconfig.node.json" }],
   "exclude": ["node_modules", "build", "dist"]
 }
